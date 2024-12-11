@@ -1,6 +1,6 @@
 # Barbie: Text to Barbie-Style 3D Avatars
 
-[**Project Page**](https://xiaokunsun.github.io/Barbie.github.io/) | [**Paper**](https://arxiv.org/pdf/2408.09126) | [**Gallery**](https://drive.google.com/drive/folders/1FXDROWXrnsSQiOZ4vBgA_Yzib3irLNBc?usp=sharing)
+[**Project Page**](https://xiaokunsun.github.io/Barbie.github.io/) | [**Arxiv**](https://arxiv.org/pdf/2408.09126) | [**Gallery**](https://drive.google.com/drive/folders/1FXDROWXrnsSQiOZ4vBgA_Yzib3irLNBc?usp=sharing)
 
 Official repo of "Barbie: Text to Barbie-Style 3D Avatars"
 

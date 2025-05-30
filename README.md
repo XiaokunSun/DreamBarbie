@@ -1,4 +1,4 @@
-![teaser](https://github.com/user-attachments/assets/e65fc48d-e35a-43fc-a070-1b9b70b78b0c)# Barbie: Text to Barbie-Style 3D Avatars
+# Barbie: Text to Barbie-Style 3D Avatars
 
 [**Project Page**](https://xiaokunsun.github.io/Barbie.github.io) | [**Arxiv**](https://arxiv.org/pdf/2408.09126) | [**Gallery**](https://drive.google.com/drive/folders/1FXDROWXrnsSQiOZ4vBgA_Yzib3irLNBc?usp=sharing)
 

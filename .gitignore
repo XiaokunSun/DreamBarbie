@@ -183,7 +183,6 @@ pretrained_models
 load/
 logs/
 outputs-gradio/
-scripts/
 
 # pretrained model weights
 *.ckpt

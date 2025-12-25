@@ -36,13 +36,13 @@ for i in range(len(naked_human_idx_list)):
                 f"system.prompt_processor_add.prompt={naked_human_prompt}, black background, depth map", 
                 "system.prompt_processor.human_part_prompt=false", "system.geometry.use_sdf_loss=false", 
                 "system.geometry.shape_init=opt_smplx:dapose1:10:3:True", "system.loss.lambda_smplx_local=1000",
-                "system.loss.lambda_smplx_global=1000", "system.geometry.update_smplx_loss_step=1001", "system.exporter.save_flag=true"]
+                "system.loss.lambda_smplx_global=1000", "system.geometry.update_smplx_loss_step=1001"]
 
     command2 = ["python", "launch.py", "--config", "configs/human-texture-coarse.yaml", "--gpu", f"{gpu_idx}",
                 "--train", f"tag={naked_human_tag}", f"name={exp_name2}", f"exp_root_dir={naked_human_exp_root_dir}",
                 "data.sampling_type=full_body", f"system.geometry_convert_from={geometry_convert_from}", f"system.geometry.isosurface_resolution={isosurface_resolution}",
                 f"system.test_save_path={test_save_path}", f"system.prompt_processor.prompt={naked_human_prompt}", 
-                "system.prompt_processor.human_part_prompt=false", "system.exporter.save_flag=true"]
+                "system.prompt_processor.human_part_prompt=false"]
 
     command3 = ["python", "launch.py", "--config", "configs/human-texture-fine.yaml", "--gpu", f"{gpu_idx}",
                 "--train", f"tag={naked_human_tag}", f"name={exp_name3}", f"exp_root_dir={naked_human_exp_root_dir}",

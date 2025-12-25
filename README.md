@@ -16,11 +16,11 @@
         SIGGRAPH Asia 2025 -->
         <br><br>
         <a href="https://arxiv.org/pdf/2408.09126">
-            <img src="https://img.shields.io/badge/ArXiv-AntiReference" alt="ArXiv">
-        </a>
+            <img src="https://img.shields.io/badge/arXiv-2408.09126-b31b1b.svg" alt="ArXiv">
+        </a> &nbsp;
         <a href="https://xiaokunsun.github.io/Barbie.github.io">
-            <img src="https://img.shields.io/badge/Project%20Page-Barbie-red" alt="Project Page">
-        </a>
+            <img src="https://img.shields.io/badge/Project%20Page-Barbie-pink" alt="Project Page">
+        </a> &nbsp;
         <a href="https://drive.google.com/drive/folders/1FXDROWXrnsSQiOZ4vBgA_Yzib3irLNBc?usp=sharing">
             <img src="https://img.shields.io/badge/Gallery-blue" alt="Gallery">
         </a>

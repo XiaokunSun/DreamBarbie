@@ -1,32 +1,3 @@
-<!-- <p align="center">
-  <h2 align="center">Barbie: Text to Barbie-Style 3D Avatars</h2>
-  <p align="center">
-    <p align="center">
-        <a href="https://xiaokunsun.github.io"><strong>Xiaokun Sun<sup>1</sup></strong></a>,
-        <a href="https://jessezhang92.github.io"><strong>Zhenyu Zhang<sup>1*</sup></strong></a>,
-        <a href="https://tyshiwo.github.io/index.html"><strong>Ying Tai<sup>1</sup></strong></a>,
-        <a href="https://ha0tang.github.io"><strong>Hao Tang<sup>2</sup></strong></a>,
-        <a href="https://zili-yi.github.io"><strong>Zili Yi<sup>1</sup></strong></a>,
-        <a href="https://scholar.google.com.hk/citations?user=6CIDtZQAAAAJ"><strong>Jian Yang<sup>1</sup></strong></a>
-        <br>
-        <b><sup>1</sup>Nanjing University</b>,
-        <b><sup>2</sup>Peking University</b>,
-        <b><sup>*</sup>Corresponding Author</b>
-    </p>
-  </p>
-<div align="center">
-<a href="https://arxiv.org/pdf/2408.09126">
-    <img src="https://img.shields.io/badge/arXiv-2408.09126-b31b1b.svg" alt="ArXiv">
-</a> &nbsp;
-<a href="https://xiaokunsun.github.io/Barbie.github.io">
-    <img src="https://img.shields.io/badge/Project%20Page-Barbie-pink" alt="Project Page">
-</a> &nbsp;
-<a href="https://drive.google.com/drive/folders/1FXDROWXrnsSQiOZ4vBgA_Yzib3irLNBc?usp=sharing">
-    <img src="https://img.shields.io/badge/Gallery-blue" alt="Gallery">
-</a>
-
-<img src="assets/teaser.png" alt="Teaser" width="80%">
-</div> -->
 <div align="center">
 
 # Barbie: Text to Barbie-Style 3D Avatars
@@ -56,7 +27,7 @@
 [![Gallery](https://img.shields.io/badge/Gallery-View-blue.svg)](https://drive.google.com/drive/folders/1FXDROWXrnsSQiOZ4vBgA_Yzib3irLNBc?usp=sharing)
 
 <br>
-<img src="assets/teaser.png" alt="Teaser" width="85%">
+<img src="assets/teaser.png" alt="Teaser" width="100%">
 </div>
 
 ## 🔨 Installation

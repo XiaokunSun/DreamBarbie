@@ -1,4 +1,4 @@
-<p align="center">
+<!-- <p align="center">
   <h2 align="center">Barbie: Text to Barbie-Style 3D Avatars</h2>
   <p align="center">
     <p align="center">
@@ -8,27 +8,56 @@
         <a href="https://ha0tang.github.io"><strong>Hao Tang<sup>2</sup></strong></a>,
         <a href="https://zili-yi.github.io"><strong>Zili Yi<sup>1</sup></strong></a>,
         <a href="https://scholar.google.com.hk/citations?user=6CIDtZQAAAAJ"><strong>Jian Yang<sup>1</sup></strong></a>
-        <br><br>
+        <br>
         <b><sup>1</sup>Nanjing University</b>,
         <b><sup>2</sup>Peking University</b>,
         <b><sup>*</sup>Corresponding Author</b>
-        <!-- <br><br>
-        SIGGRAPH Asia 2025 -->
-        <br><br>
-        <a href="https://arxiv.org/pdf/2408.09126">
-            <img src="https://img.shields.io/badge/arXiv-2408.09126-b31b1b.svg" alt="ArXiv">
-        </a> &nbsp;
-        <a href="https://xiaokunsun.github.io/Barbie.github.io">
-            <img src="https://img.shields.io/badge/Project%20Page-Barbie-pink" alt="Project Page">
-        </a> &nbsp;
-        <a href="https://drive.google.com/drive/folders/1FXDROWXrnsSQiOZ4vBgA_Yzib3irLNBc?usp=sharing">
-            <img src="https://img.shields.io/badge/Gallery-blue" alt="Gallery">
-        </a>
-        <br><br>
-        <img src="assets/teaser.png" alt="Teaser" width="80%">
-        <br>
     </p>
   </p>
+<div align="center">
+<a href="https://arxiv.org/pdf/2408.09126">
+    <img src="https://img.shields.io/badge/arXiv-2408.09126-b31b1b.svg" alt="ArXiv">
+</a> &nbsp;
+<a href="https://xiaokunsun.github.io/Barbie.github.io">
+    <img src="https://img.shields.io/badge/Project%20Page-Barbie-pink" alt="Project Page">
+</a> &nbsp;
+<a href="https://drive.google.com/drive/folders/1FXDROWXrnsSQiOZ4vBgA_Yzib3irLNBc?usp=sharing">
+    <img src="https://img.shields.io/badge/Gallery-blue" alt="Gallery">
+</a>
+
+<img src="assets/teaser.png" alt="Teaser" width="80%">
+</div> -->
+<div align="center">
+
+# Barbie: Text to Barbie-Style 3D Avatars
+
+<div>
+    <a href="https://xiaokunsun.github.io"><strong>Xiaokun Sun</strong></a><sup>1</sup>,
+    <a href="https://jessezhang92.github.io"><strong>Zhenyu Zhang</strong></a><sup>1*</sup>,
+    <a href="https://tyshiwo.github.io/index.html"><strong>Ying Tai</strong></a><sup>1</sup>,
+    <a href="https://ha0tang.github.io"><strong>Hao Tang</strong></a><sup>2</sup>,
+    <a href="https://zili-yi.github.io"><strong>Zili Yi</strong></a><sup>1</sup>,
+    <a href="https://scholar.google.com.hk/citations?user=6CIDtZQAAAAJ"><strong>Jian Yang</strong></a><sup>1</sup>
+</div>
+
+<div>
+    <sup>1</sup><strong>Nanjing University</strong> &nbsp;&nbsp;
+    <sup>2</sup><strong>Peking University</strong>
+</div>
+
+<div>
+    <sup>*</sup><strong>Corresponding Author</strong>
+</div>
+
+<br>
+
+[![ArXiv](https://img.shields.io/badge/ArXiv-2408.09126-b31b1b.svg)](https://arxiv.org/pdf/2408.09126)
+[![Project Page](https://img.shields.io/badge/Project%20Page-Barbie-ff69b4.svg)](https://xiaokunsun.github.io/Barbie.github.io)
+[![Gallery](https://img.shields.io/badge/Gallery-View-blue.svg)](https://drive.google.com/drive/folders/1FXDROWXrnsSQiOZ4vBgA_Yzib3irLNBc?usp=sharing)
+
+<br>
+<img src="assets/teaser.png" alt="Teaser" width="85%">
+</div>
 
 ## 🔨 Installation
 Tested on **Ubuntu 20.04**, **Python 3.8**, **NVIDIA A6000**, **CUDA 11.7**, and **PyTorch 2.0.0**. Follow the steps below to set up the environment.

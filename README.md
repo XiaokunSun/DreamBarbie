@@ -1,6 +1,6 @@
 <div align="center">
 
-# Barbie: Text to Barbie-Style 3D Avatars
+# [TVCG 2026] DreamBarbie: Text to Barbie-Style 3D Avatars
 
 <div>
     <a href="https://xiaokunsun.github.io"><strong>Xiaokun Sun</strong></a><sup>1</sup>,
@@ -23,7 +23,7 @@
 <br>
 
 [![ArXiv](https://img.shields.io/badge/ArXiv-2408.09126-b31b1b.svg)](https://arxiv.org/pdf/2408.09126)
-[![Project Page](https://img.shields.io/badge/Project%20Page-Barbie-ff69b4.svg)](https://xiaokunsun.github.io/Barbie.github.io)
+[![Project Page](https://img.shields.io/badge/Project%20Page-DreamBarbie-ff69b4.svg)](https://xiaokunsun.github.io/DreamBarbie.github.io)
 [![Gallery](https://img.shields.io/badge/Gallery-View-blue.svg)](https://drive.google.com/drive/folders/1FXDROWXrnsSQiOZ4vBgA_Yzib3irLNBc?usp=sharing)
 
 <br>
@@ -35,13 +35,13 @@ Tested on **Ubuntu 20.04**, **Python 3.8**, **NVIDIA A6000**, **CUDA 11.7**, and
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/XiaokunSun/Barbie.git
-cd Barbie
+git clone https://github.com/XiaokunSun/DreamBarbie.git
+cd DreamBarbie
 ```
 2. Create a conda environment:
 ```bash
-conda create -n barbie python=3.8 -y
-conda activate barbie
+conda create -n dreambarbie python=3.8 -y
+conda activate dreambarbie
 ```
 
 3. Install dependencies:
@@ -69,9 +69,9 @@ cd ../
 5. Download other models (eg., SMPLX, Tets) from [GoogleDrive](https://drive.google.com/drive/folders/1c8ouintJ1xqnlx2logEHfJSn4HD3EHAu?usp=drive_link).
 Make sure you have the following models:
 ```bash
-Barbie
+DreamBarbie
 |-- load
-    |-- barbie
+    |-- dreambarbie
         |-- data_dict.json
         |-- overall_data_dict.json
     |-- smplx_models
@@ -103,12 +103,12 @@ Barbie
 ## 🕺 Inference
 ```bash
 # Generate naked human
-python ./scripts/generate_naked_human.py --dict_path ./load/barbie/data_dict.json --naked_human_exp_root_dir ./outputs/naked_human --naked_human_idx 0:1:1 --gpu_idx 0
+python ./scripts/generate_naked_human.py --dict_path ./load/dreambarbie/data_dict.json --naked_human_exp_root_dir ./outputs/naked_human --naked_human_idx 0:1:1 --gpu_idx 0
 # Generate clothed human
-python ./scripts/generate_clothed_human.py --dict_path ./load/barbie/data_dict.json --naked_human_exp_root_dir ./outputs/naked_human --clothed_human_exp_root_dir ./outputs/clothed_human --naked_human_idx 0:1:1 --cloth_idx 0:1:1 --gpu_idx 0
+python ./scripts/generate_clothed_human.py --dict_path ./load/dreambarbie/data_dict.json --naked_human_exp_root_dir ./outputs/naked_human --clothed_human_exp_root_dir ./outputs/clothed_human --naked_human_idx 0:1:1 --cloth_idx 0:1:1 --gpu_idx 0
 # Generate human wearing overall
-python ./scripts/generate_naked_human.py --dict_path ./load/barbie/overall_data_dict.json --naked_human_exp_root_dir ./outputs/naked_human --naked_human_idx 0:1:1 --gpu_idx 0
-python ./scripts/generate_clothed_overall_human.py --dict_path ./load/barbie/overall_data_dict.json --naked_human_exp_root_dir ./outputs/naked_human --clothed_human_exp_root_dir ./outputs/clothed_overall_human --naked_human_idx 0:1:1 --cloth_idx 0:1:1 --gpu_idx 0
+python ./scripts/generate_naked_human.py --dict_path ./load/dreambarbie/overall_data_dict.json --naked_human_exp_root_dir ./outputs/naked_human --naked_human_idx 0:1:1 --gpu_idx 0
+python ./scripts/generate_clothed_overall_human.py --dict_path ./load/dreambarbie/overall_data_dict.json --naked_human_exp_root_dir ./outputs/naked_human --clothed_human_exp_root_dir ./outputs/clothed_overall_human --naked_human_idx 0:1:1 --cloth_idx 0:1:1 --gpu_idx 0
 ```
 
 ## 🪄 Application
@@ -128,10 +128,10 @@ This repository is based on many amazing research works and open-source projects
 ## 📚 Citation
 If you find this repository helpful for your work, please consider citing it as follows:
 ```bibtex
-@article{sun2024barbie,
-  title={Barbie: Text to Barbie-Style 3D Avatars},
+@article{sun2026dreambarbie,
+  title={DreamBarbie: Text to Barbie-Style 3D Avatars},
   author={Sun, Xiaokun and Zhang, Zhenyu and Tai, Ying and Tang, Hao and Yi, Zili and Yang, Jian},
-  journal={arXiv preprint arXiv:2408.09126},
-  year={2024}
+  journal=TVCG,
+  year={2026}
 }
 ```

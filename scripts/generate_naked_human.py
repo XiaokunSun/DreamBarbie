@@ -4,7 +4,7 @@ import json
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dict_path', default="./load/barbie/data_dict.json", type=str)
+parser.add_argument('--dict_path', default="./load/dreambarbie/data_dict.json", type=str)
 parser.add_argument('--naked_human_exp_root_dir', default="./outputs/naked_human", type=str)
 parser.add_argument('--naked_human_idx', default="0:1:1", type=str)
 parser.add_argument('--gpu_idx', default=0, type=int)

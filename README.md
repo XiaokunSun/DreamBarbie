@@ -34,71 +34,73 @@
 Tested on **Ubuntu 20.04**, **Python 3.8**, **NVIDIA A6000**, **CUDA 11.7**, and **PyTorch 2.0.0**. Follow the steps below to set up the environment.
 
 1. Clone the repo:
-```bash
-git clone https://github.com/XiaokunSun/DreamBarbie.git
-cd DreamBarbie
-```
+    ```bash
+    git clone https://github.com/XiaokunSun/DreamBarbie.git
+    cd DreamBarbie
+    ```
+
 2. Create a conda environment:
-```bash
-conda create -n dreambarbie python=3.8 -y
-conda activate dreambarbie
-```
+    ```bash
+    conda create -n dreambarbie python=3.8 -y
+    conda activate dreambarbie
+    ```
 
 3. Install dependencies:
-```bash
-pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1
-pip install -r requirements.txt
-pip install git+https://github.com/openai/CLIP.git
-pip install git+https://github.com/ashawkey/envlight.git
-pip install git+https://github.com/NVlabs/nvdiffrast.git --no-build-isolation
-pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
-pip install git+https://github.com/KAIR-BAIR/nerfacc.git@v0.5.2
-pip install git+https://github.com/ashawkey/cubvh --no-build-isolation
-conda install https://anaconda.org/pytorch3d/pytorch3d/0.7.5/download/linux-64/pytorch3d-0.7.5-py38_cu117_pyt200.tar.bz2 # Note: Please ensure the pytorch3d version matches your CUDA and Torch versions
-pip install git+https://github.com/bellockk/alphashape.git
-```
+    ```bash
+    pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1
+    pip install -r requirements.txt
+    pip install git+https://github.com/openai/CLIP.git
+    pip install git+https://github.com/ashawkey/envlight.git
+    pip install git+https://github.com/NVlabs/nvdiffrast.git --no-build-isolation
+    pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+    pip install git+https://github.com/KAIR-BAIR/nerfacc.git@v0.5.2
+    pip install git+https://github.com/ashawkey/cubvh --no-build-isolation
+    conda install https://anaconda.org/pytorch3d/pytorch3d/0.7.5/download/linux-64/pytorch3d-0.7.5-py38_cu117_pyt200.tar.bz2 # Note: Please ensure the pytorch3d version matches your Python, CUDA and Torch versions
+    pip install git+https://github.com/bellockk/alphashape.git
+    ```
 
-4. Download models:
-```bash
-mkdir ./pretrained_models
-bash ./scripts/download_humannorm_models.sh
-python ./scripts/download_richdreamer_models.py
-cd ./pretrained_models && ln -s ~/.cache/huggingface ./
-cd ../
-```
+4. Download pretrainedmodels:
+    ```bash
+    mkdir ./pretrained_models
+    bash ./scripts/download_humannorm_models.sh
+    python ./scripts/download_richdreamer_models.py
+    cd ./pretrained_models && ln -s ~/.cache/huggingface ./
+    cd ../
+    ```
+
 5. Download other models (eg., SMPLX, Tets) from [GoogleDrive](https://drive.google.com/drive/folders/1c8ouintJ1xqnlx2logEHfJSn4HD3EHAu?usp=drive_link).
-Make sure you have the following models:
-```bash
-DreamBarbie
-|-- load
-    |-- dreambarbie
-        |-- data_dict.json
-        |-- overall_data_dict.json
-    |-- smplx_models
-        |-- smplx
-            |-- smplx_cloth_mask.pkl
-            |-- smplx_face_ears_noeyeballs_idx.npy
-            |-- SMPLX_NEUTRAL.npz
-            |-- smplx_watertight.pkl
-    |-- tets
-        |-- 256_tets.npz
-    |-- prompt_library.json
-|-- pretrained_models
-    |-- controlnet-normal-sd1.5
-    |-- depth-adapted-sd1.5
-    |-- normal-adapted-sd1.5
-    |-- normal-aligned-sd1.5
-    |-- Damo_XR_Lab
-        |-- Normal-Depth-Diffusion-Model
-            |-- nd_mv_ema.ckpt
-            |-- albedo_mv_ema.ckpt
-    |-- huggingface
-        |-- hub
-            |-- models--runwayml--stable-diffusion-v1-5
-            |-- models--openai--clip-vit-large-patch14
-            |-- models--stabilityai--stable-diffusion-2-1-base
-            |-- models--laion--CLIP-ViT-H-14-laion2B-s32B-b79K
-```
+    Make sure you have the following models:
+    ```bash
+    DreamBarbie
+    |-- load
+        |-- dreambarbie
+            |-- data_dict.json
+            |-- overall_data_dict.json
+        |-- smplx_models
+            |-- smplx
+                |-- smplx_cloth_mask.pkl
+                |-- smplx_face_ears_noeyeballs_idx.npy
+                |-- SMPLX_NEUTRAL.npz
+                |-- smplx_watertight.pkl
+        |-- tets
+            |-- 256_tets.npz
+        |-- prompt_library.json
+    |-- pretrained_models
+        |-- controlnet-normal-sd1.5
+        |-- depth-adapted-sd1.5
+        |-- normal-adapted-sd1.5
+        |-- normal-aligned-sd1.5
+        |-- Damo_XR_Lab
+            |-- Normal-Depth-Diffusion-Model
+                |-- nd_mv_ema.ckpt
+                |-- albedo_mv_ema.ckpt
+        |-- huggingface
+            |-- hub
+                |-- models--runwayml--stable-diffusion-v1-5
+                |-- models--openai--clip-vit-large-patch14
+                |-- models--stabilityai--stable-diffusion-2-1-base
+                |-- models--laion--CLIP-ViT-H-14-laion2B-s32B-b79K
+    ```
 
 ## 🕺 Inference
 ```bash
@@ -131,7 +133,7 @@ If you find this repository helpful for your work, please consider citing it as 
 @article{sun2026dreambarbie,
   title={DreamBarbie: Text to Barbie-Style 3D Avatars},
   author={Sun, Xiaokun and Zhang, Zhenyu and Tai, Ying and Tang, Hao and Yi, Zili and Yang, Jian},
-  journal=TVCG,
+  journal={TVCG},
   year={2026}
 }
 ```

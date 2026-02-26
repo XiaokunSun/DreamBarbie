@@ -124,11 +124,11 @@ python ./scripts/animation.py
 ```
 If you want to customize clothing templates, please see ```./scripts/smplx_cloth_mask.py```
 
-## ⭐ Acknowledgements
+## 💖 Acknowledgements
 This repository is based on many amazing research works and open-source projects: [ThreeStudio](https://github.com/threestudio-project/threestudio), [HumanNorm](https://github.com/xhuangcv/humannorm), [RichDreamer](https://github.com/modelscope/richdreamer), [G-Shell](https://github.com/lzzcd001/GShell), etc. Thanks all the authors for their selfless contributions to the community!
 
 ## 📚 Citation
-If you find this repository helpful for your work, please consider citing it as follows:
+If you find our work helpful for your research, please consider starring this repository ⭐ and citing our work:
 ```bibtex
 @article{sun2026dreambarbie,
   title={DreamBarbie: Text to Barbie-Style 3D Avatars},
